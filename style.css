@@ -1,5 +1,5 @@
 *{margin: 0 0 0 0;}
-body{background-color:#cd853f;
+body{background-color:#ced0ce !important;
 }
 /* estilo header */
 header{display: flex;
@@ -8,9 +8,10 @@ width: 100%;
 height: 40px;
 position: fixed;
 z-index: 2;
-background-color: #dc143c;
+background-color: white;
 grid-area: header;
-margin-bottom: 20px;
+margin-bottom: 30px;
+margin-top: 0px;
 }
 
 .encabezado{display: flex;
@@ -32,34 +33,34 @@ position: relative;
 grid-area: nav;
 }
 .menu{display: block;
-background-color: #000000;
+background-color: #808080;
 position: relative;
-margin-bottom: 20px;
+margin-bottom: 40px;
 z-index: 2;}
 .menu ul li{display: inline;  padding-right: 20px;
-    background-color: #000000;
+    background-color: #808080;
     position: relative;
     z-index: 2;
     }
     ul li a{color: white;
         text-decoration: none;
         display: inline;
-        background-color: #000000;
+        background-color: #808080;
         text-align: center;
         position: relative;
         z-index: 2;
         }
         
-        ul li:hover{background-color: #5F634F;}
+        ul li:hover{background-color: white;}
 
-        ul li a:hover{background-color: #5F634F;}
+        ul li a:hover{background-color: white;}
 
         /* estilo main */
 
 
      .mates_perzonalizados{display: flex;
 flex-direction: column;
-margin-top: 30px;
+margin-top: 50px;
 grid-area: main}
 .titulo_principal{text-align: center;
     font-family:  'Rubik Marker Hatch', cursive;
@@ -114,6 +115,7 @@ text-decoration: none;}
 .lista_imagenes{list-style: none;
 margin: 10px;}
 
+
 .banner img{width: 100%;
 height: 50px;
 }
@@ -146,20 +148,7 @@ button{margin: 10px;}
 width: 100px;}
 
 /* estilo sobre nostros */
-.sobre_nostros{text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 60px;
-    margin-top: 20px;
-}
-.sobre_nos_principal{margin-bottom: 15px;
-margin-top: 60px;}
-.sobre_nos_principal img{width: 100%;
-margin: 15px 0 15px 0;
-border: #000000 2px solid;}
-.nuestra_descripacion{font-family: 'Courier New', Courier, monospace;
-font-size: 35px;
-padding: 10px;
-}
+
 .como_trabajamos{font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     margin: 15px;
@@ -174,11 +163,15 @@ width: 200px;
     font-family: 'Courier New', Courier, monospace;
     margin: 15px;}
 
+    .sobre_nos_titulo{margin-top: 120px;}
+    .sobre_nos_img{width: 100%;
+    height: 800px;}
     /* estilo clientes */
     .clientes__titulo{text-align: center;
         font-family: 'Courier New', Courier, monospace;
         font-size: 60px;
-    padding-top: 80px;
+    padding-top: 100px;
+    
 
     }
     .clientes{display: flex;
@@ -194,11 +187,20 @@ margin: 5px;}
 }
 .clientes_principal{margin-bottom: 20px;}
 
-fieldset{border: #000000 2px solid;
-margin: 50px;
-padding: 20px;}
-.titulo__contacto{text-align: center;
-margin: 20px;}
+.form_pedidos{margin-top: 50px;
+    grid-area: form;
+}
+fieldset{border: #000000 2px solid !important;
+margin: 50px !important;
+padding: 20px !important;
+width: 100%;}
+.pagina_contacto{position: absolute;
+margin-top: 100px;
+}
+
+.titulo_contacto{display: flex;
+justify-content: center;
+flex-direction: column;}
 .completa{text-align: center;
 margin: 10px;}
 
@@ -224,10 +226,14 @@ grid-template-areas: "header" "header"
 "banner" "banner"
 "footer" "footer";}
 
-.datos__sobre_nos{display: grid;
-grid-template-areas: "video" "mapa";}
-.video__sobrenos{grid-area: video;}
-.direcc__sobrenos{grid-area: mapa;}
+.contactanos_body{display: grid;
+grid-template-areas: "header" "header"
+"form" "form"
+"form" "form"
+"footer" "footer";
+grid-template-rows: 200px 400px 400px 50px;
+grid-template-columns: repeat 2(1fr);}
+
       
 @media (max-width: 768px){ *{margin: 0 0 0 0;}
 
@@ -239,32 +245,33 @@ header{display: flex;
     height: 40px;
     position: fixed;
     z-index: 2;
-    background-color: #dc143c;
+    background-color: white;
     grid-area: header;
     }
 
 .barra_menu{display:flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: stretch;
     width: 50%;
 height: 40px;
 position: relative;
+align-content: flex-end;
 
 }
-.navegador{display: flex;
-flex-direction: row;
-flex-wrap: wrap;}
 
-.menu ul li{display: inline-block;  padding-right: 20px;
-    background-color: #000000;
+
+.menu ul li{display: inline-block; 
+    background-color: white;
     position: relative;
     z-index: 2;
     align-content: right;
     grid-area: nav;
     }
-    ul li a{color: white;
+    ul li a{color: black;
         text-decoration: none;
         display: inline-block;
-        background-color: #000000;
+        background-color: white;
         text-align: right;
         position: relative;
         z-index: 2;
@@ -340,7 +347,8 @@ position: relative;}
     height: 40px;
     position: fixed;
     z-index: 2;
-    background-color: #dc143c;
+    background-color: white
+    ;
     grid-area: header;
     margin-bottom: 20px;
     }
@@ -358,31 +366,31 @@ position: relative;}
     }
     /* estilo nav */
     .menu ul{list-style: none;
-    background-color: #000000;
+    background-color: white;
     padding-bottom: 10px;
     position: relative;
     grid-area: nav;
     }
     .menu{display: block;
-    background-color: #000000;
+    background-color: white;
     position: relative;
     margin-bottom: 20px;
     z-index: 2;}
     .menu ul li{display: inline;  padding-right: 20px;
-        background-color: #000000;
+        background-color: white;
         position: relative;
         z-index: 2;
         }
         ul li a{color: white;
             text-decoration: none;
             display: inline;
-            background-color: #000000;
+            background-color: white;
             text-align: center;
             position: relative;
             z-index: 2;
             }
             
-            ul li a:hover{background-color: #FA824C;}
+            ul li a:hover{background-color: #808080;}
     
             /* estilo main */
     

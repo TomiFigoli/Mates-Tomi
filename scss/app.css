@@ -1,0 +1,52 @@
+body {
+  background-color: #E7E393 !important;
+}
+
+header {
+  background-color: #DD7230 !important;
+}
+header .navbar-nav {
+  background-color: #DD7230 !important;
+}
+header .container-fluid {
+  background-color: #DD7230 !important;
+}
+header .container-fluid ul li a {
+  background-color: #DD7230;
+}
+header .container-fluid ul li:hover {
+  background-color: #F4C95D;
+}
+header .container-fluid ul li a:hover {
+  background-color: #F4C95D;
+}
+header .titulo__header {
+  font-size: 30px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif !important;
+}
+
+footer {
+  background-color: #DD7230;
+}
+
+.direcc__sobrenos {
+  margin-top: 30px;
+}
+.direcc__sobrenos .direccion {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 15px;
+}
+.direcc__sobrenos .mapa {
+  margin-top: 40px;
+}
+
+.pagina_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}/*# sourceMappingURL=app.css.map */

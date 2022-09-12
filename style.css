@@ -8,7 +8,6 @@ width: 100%;
 height: 40px;
 position: fixed;
 z-index: 2;
-background-color: white;
 grid-area: header;
 margin-bottom: 30px;
 margin-top: 0px;
@@ -45,15 +44,13 @@ z-index: 2;}
     ul li a{color: white;
         text-decoration: none;
         display: inline;
-        background-color: #808080;
+    
         text-align: center;
         position: relative;
         z-index: 2;
         }
         
-        ul li:hover{background-color: white;}
-
-        ul li a:hover{background-color: white;}
+      
 
         /* estilo main */
 
@@ -159,9 +156,7 @@ border: #000000 2px solid;
 height: 200px;
 width: 200px;
 }
-.direccion{font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 15px;}
+
 
     .sobre_nos_titulo{margin-top: 120px;}
     .sobre_nos_img{width: 100%;
@@ -170,7 +165,7 @@ width: 200px;
     .clientes__titulo{text-align: center;
         font-family: 'Courier New', Courier, monospace;
         font-size: 60px;
-    padding-top: 100px;
+    padding-top: 101px;
     
 
     }
@@ -284,7 +279,8 @@ grid-template-areas: "main main"
 "main main"
 "texto_video texto_video"
 "texto_video texto_video";
-z-index: 1;}
+z-index: 1;
+width: 100%;}
 
 .texto_video{display: flex;
 flex-direction: column;

@@ -1,0 +1,33 @@
+$primary-color: #E7E393;
+$secondary-color: #DD7230;
+$terciary-color: #F4C95D;
+$primary-font:'Inter', sans-serif;
+
+body{background-color: $primary-color !important;}
+header{background-color: $secondary-color !important;
+    .navbar-nav{background-color: $secondary-color !important;}
+.container-fluid{background-color: $secondary-color !important;
+    ul li a{background-color: $secondary-color;}
+    ul li:hover{background-color: $terciary-color;}
+    ul li a:hover{background-color: $terciary-color;}}
+.titulo__header{font-size: 30px;}
+}
+h1{font-family: $primary-font !important;}
+footer{background-color: $secondary-color;}
+
+// sobre nostros
+.direcc__sobrenos{margin-top: 30px;
+    .direccion{font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 15px;}
+        .mapa{margin-top: 40px;}
+}
+
+// contactos
+.pagina_contacto{display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+
+}
+

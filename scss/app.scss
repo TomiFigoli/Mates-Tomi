@@ -1,33 +1,285 @@
-$primary-color: #E7E393;
-$secondary-color: #DD7230;
-$terciary-color: #F4C95D;
+$colores:(primary:#E7E394,
+secondary:#DD7230,
+terciary:#F4C95D, 
+ );
+@mixin tipografy ($font, $size) { font-family: $font;
+                                font-size:$size}
+    
 $primary-font:'Inter', sans-serif;
+*{margin: 0 0 0 0;}
 
-body{background-color: $primary-color !important;}
-header{background-color: $secondary-color !important;
-    .navbar-nav{background-color: $secondary-color !important;}
-.container-fluid{background-color: $secondary-color !important;
-    ul li a{background-color: $secondary-color;}
-    ul li:hover{background-color: $terciary-color;}
-    ul li a:hover{background-color: $terciary-color;}}
-.titulo__header{font-size: 30px;}
-}
+body{background-color: map-get($map: $colores, $key:primary ) !important;}
 h1{font-family: $primary-font !important;}
-footer{background-color: $secondary-color;}
+h2{@include tipografy($primary-font,30px !important);}
+// estilo header
+header{background-color: map-get($map: $colores, $key:secondary ) !important;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        z-index: 2;
+        grid-area: header;
+        margin-bottom: 30px;
+    .encabezado{display: flex;
+        width: 100%;
+        height: 40px;
+        flex-direction: row;
+        align-content: stretch;
+        .titulo__header{padding-bottom: 5px;}
+}
+    .navbar-nav{background-color: map-get($map: $colores, $key:secondary ) !important;}
+    .container-fluid{background-color: map-get($map: $colores, $key:secondary ) !important;
+    ul li a{background-color: map-get($map: $colores, $key:secondary );}
+    ul li:hover{background-color: map-get($map: $colores, $key:terciary );}
+    ul li a:hover{background-color: map-get($map: $colores, $key:terciary );}}
+    .titulo__header{font-size: 30px;}
+}
+
+// estilo index
+.mates_perzonalizados{display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    grid-area: main;
+    .titulo_principal{text-align: center;
+        font-size: 50px;
+        z-index: 2;
+        margin-top: 40px;
+    }
+    .imagen_principal{width: 100%;
+        height: 100%;
+        z-index: 1;}
+        .texto1{margin-bottom: 30px;
+            h3{text-align: center;
+                font-family:  'Rubik Marker Hatch', cursive;
+            font-size: 30px;
+            z-index: 2;
+            margin-bottom: 30px
+            }
+            p{text-align: center;
+                font-family:  'Rubik Marker Hatch', cursive;
+            font-size: 10px;
+            z-index: 2;
+            margin-bottom: 30px}
+        }
+}
+.texto_video{display: flex;
+    flex-direction: row;
+align-content: stretch;
+justify-content: space-between;
+grid-area: texto_video;
+.conoce_como_trabajamos h4{font-family:  'Rubik Marker Hatch', cursive;
+    font-size: 30px;
+    padding-bottom: 10px ;
+    margin-right: 10px;}
+    .conoce_como_trabajamos p{padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        }
+        .conoce_como_trabajamos iframe{height: 700px;
+            width: 700px;
+            border: #000000 2px solid;
+            margin: 10px;
+        }
+}
+.imagenes-links{display: flex;
+    flex-direction: column;
+    align-content: center;
+    img{margin: 20px;
+        height: 200px;
+        width: 200px;
+        margin-right: 200px;
+        border: #000000 2px solid;
+        align-items: right;}
+        p{font-family:  'Rubik Marker Hatch', cursive;
+            text-decoration: none;}
+            .lista_imagenes{list-style: none;
+                margin: 10px;}
+}
+
+// estilo tarjetas
+.contenedor__tarjetas{display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
+    grid-area: tarjeta;
+    .tarjeta{border: #000000 2px solid;
+        background-color: map-get($map: $colores, $key:terciary );
+        margin: 10px;
+        position: relative;
+        width: 600px;
+        h3{font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;} 
+            .descripcion__tarjeta{font-family: 'Courier New', Courier, monospace;}
+            .tarjeta img{padding: 10px;}
+            button{margin: 10px;
+            background-color:map-get($map: $colores, $key:secondary ) ;}
+            
+            .tarjeta button:hover{height: 30px;
+            width: 100px;}  
+    }
+    }
 
 // sobre nostros
+.como_trabajamos{font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px;
+}
+.sobre_nos_titulo{margin-top: 120px;}
+    .sobre_nos_img{width: 100%;
+    height: 800px;}
+    .video__sobrenos iframe{align-content: center;
+        margin: 10px;
+        border: #000000 2px solid;
+        height: 200px;
+        width: 200px;
+        }
 .direcc__sobrenos{margin-top: 30px;
     .direccion{font-size: 30px;
         font-family: 'Courier New', Courier, monospace;
         margin-bottom: 15px;}
-        .mapa{margin-top: 40px;}
+        .mapa{margin: 10px;
+            border: #000000 2px solid;
+            height: 200px;
+            width: 200px;}
 }
+// clientes
+.clientes_principal{width: 100%;
+img{width: 100%;}}
+.clientes{display: flex;
+    flex-direction: row;
+margin-top: 20px;
+img{width: 80px;
+    height: 80px;
+border: #000000 2px solid;
+margin: 5px;}}
+
 
 // contactos
 .pagina_contacto{display: flex;
 flex-direction: column;
 align-items: center;
 width: 100%;
+.titulo_contacto{padding-top: 100px;}
+fieldset{border: #000000 2px solid !important;
+    margin: 30px !important;
+    padding: 20px !important;
+    width: 100%;}
+}
+.redes{width: 100%;
+height: 300px;
+margin-bottom: 50px;
+grid-area: redes;
+display: flex;
+flex-direction: column;
+align-content: center;
+p{font-size: 30px;}
+.logo_redes{width: 30px;
+height: 30px;
+border: solid 2px black}
+#instagram_logo{@extend .logo_redes;
+background-color: #ee82ee;}
+#twitter_logo{@extend .logo_redes;
+background-color: #87ceeb;}
+#facebook_logo{@extend .logo_redes;
+background-color:#0000ff;}}
 
+footer{background-color: map-get($map: $colores, $key:terciary );
+    grid-area: footer;
+    margin-top: 2px;}
+
+    /* grids */
+.index_body{display: grid;
+    grid-template-areas: "header" "header" "header" 
+    "nav" "nav" "nav" 
+    "main" "main" "main" 
+    "texto_video" "texto_video" "texto_video"  
+    "footer" "footer" "footer" ;
+    
+grid-template-rows: 600px 600px 1500px;
+
+justify-content: stretch;}
+
+
+.products_body{display: grid;
+grid-template-areas: "header" "header"
+"nav" "nav"
+"tarjeta" "tarjeta"
+"footer" "footer";}
+
+.contactanos_body{display: grid;
+grid-template-areas: "header" "header"
+"form" "form"
+"redes" "redes"
+"footer" "footer";
+grid-template-rows: 200px 400px 100px 50px;
+grid-template-columns: repeat 2(1fr);}
+
+@media (max-width: 768px){ *{margin: 0 0 0 0;}
+
+// estilo mobile header
+header{ width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: nowrap;
+    .encabezado{width: 50%;
+    align-content: flex-start;}
+    .barra_menu{width: 50%;
+    align-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    background-color: map-get($map: $colores, $key:secondary );
+.navbar{padding: 0;
+.show{margin-right: 100px;}}
+.container-fluid{
+margin-bottom: 30px;} }
 }
 
+// index mobile
+.index_body{display: block;}
+.container_principal{width: 100%;
+    height: 100%;
+display: flex;
+flex-direction: column;
+align-content: space-between;
+img{width: 100%;
+margin-bottom: 30px;}
+.texto1{margin-left: 30px;}
+.texto_video{display: flex;
+flex-direction: column;
+width: 100%;
+iframe{width: 500px;
+margin-left: 50px;}}
+}
+.conoce_como_trabajamos{
+    h4{margin-left: 200px;}
+    p{margin-left: 270px;}
+}
+.lista_imagenes{
+    li{margin-left: 200px;
+        img{width: 200px;
+        height: 200px;}
+    }
+}
+// clientes mobile
+   .clientes_principal{display: flex;
+    flex-direction: column;
+align-content: center;
+justify-content: center;
+width: 100%;
+padding-top: 50px;
+img{width: 100%;}
+} 
+.clientes{display: flex;
+flex-direction: column;
+justify-content: center;
+img{align-content: center;}}
+footer{width: 100%;}
+}
+
+// contactanos mobile
+
+.redes{margin-bottom: 150px;}
+.form_contacto{margin-right: 80px;}

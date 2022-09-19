@@ -1,9 +1,40 @@
+* {
+  margin: 0 0 0 0;
+}
+
 body {
-  background-color: #E7E393 !important;
+  background-color: #E7E394 !important;
+}
+
+h1 {
+  font-family: "Inter", sans-serif !important;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 30px !important;
 }
 
 header {
   background-color: #DD7230 !important;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  z-index: 2;
+  grid-area: header;
+  margin-bottom: 30px;
+}
+header .encabezado {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  flex-direction: row;
+  align-content: stretch;
+}
+header .encabezado .titulo__header {
+  padding-bottom: 5px;
 }
 header .navbar-nav {
   background-color: #DD7230 !important;
@@ -24,12 +55,143 @@ header .titulo__header {
   font-size: 30px;
 }
 
-h1 {
-  font-family: "Inter", sans-serif !important;
+.mates_perzonalizados {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  grid-area: main;
+}
+.mates_perzonalizados .titulo_principal {
+  text-align: center;
+  font-size: 50px;
+  z-index: 2;
+  margin-top: 40px;
+}
+.mates_perzonalizados .imagen_principal {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.mates_perzonalizados .texto1 {
+  margin-bottom: 30px;
+}
+.mates_perzonalizados .texto1 h3 {
+  text-align: center;
+  font-family: "Rubik Marker Hatch", cursive;
+  font-size: 30px;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+.mates_perzonalizados .texto1 p {
+  text-align: center;
+  font-family: "Rubik Marker Hatch", cursive;
+  font-size: 10px;
+  z-index: 2;
+  margin-bottom: 30px;
 }
 
-footer {
+.texto_video {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  grid-area: texto_video;
+}
+.texto_video .conoce_como_trabajamos h4 {
+  font-family: "Rubik Marker Hatch", cursive;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+.texto_video .conoce_como_trabajamos p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.texto_video .conoce_como_trabajamos iframe {
+  height: 700px;
+  width: 700px;
+  border: #000000 2px solid;
+  margin: 10px;
+}
+
+.imagenes-links {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.imagenes-links img {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  margin-right: 200px;
+  border: #000000 2px solid;
+  align-items: right;
+}
+.imagenes-links p {
+  font-family: "Rubik Marker Hatch", cursive;
+  text-decoration: none;
+}
+.imagenes-links .lista_imagenes {
+  list-style: none;
+  margin: 10px;
+}
+
+.contenedor__tarjetas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 100px;
+  grid-area: tarjeta;
+}
+.contenedor__tarjetas .tarjeta {
+  border: #000000 2px solid;
+  background-color: #F4C95D;
+  margin: 10px;
+  position: relative;
+  width: 600px;
+}
+.contenedor__tarjetas .tarjeta h3 {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.contenedor__tarjetas .tarjeta .descripcion__tarjeta {
+  font-family: "Courier New", Courier, monospace;
+}
+.contenedor__tarjetas .tarjeta .tarjeta img {
+  padding: 10px;
+}
+.contenedor__tarjetas .tarjeta button {
+  margin: 10px;
   background-color: #DD7230;
+}
+.contenedor__tarjetas .tarjeta .tarjeta button:hover {
+  height: 30px;
+  width: 100px;
+}
+
+.como_trabajamos {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 15px;
+}
+
+.sobre_nos_titulo {
+  margin-top: 120px;
+}
+
+.sobre_nos_img {
+  width: 100%;
+  height: 800px;
+}
+
+.video__sobrenos iframe {
+  align-content: center;
+  margin: 10px;
+  border: #000000 2px solid;
+  height: 200px;
+  width: 200px;
 }
 
 .direcc__sobrenos {
@@ -41,7 +203,29 @@ footer {
   margin-bottom: 15px;
 }
 .direcc__sobrenos .mapa {
-  margin-top: 40px;
+  margin: 10px;
+  border: #000000 2px solid;
+  height: 200px;
+  width: 200px;
+}
+
+.clientes_principal {
+  width: 100%;
+}
+.clientes_principal img {
+  width: 100%;
+}
+
+.clientes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.clientes img {
+  width: 80px;
+  height: 80px;
+  border: #000000 2px solid;
+  margin: 5px;
 }
 
 .pagina_contacto {
@@ -49,4 +233,167 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+.pagina_contacto .titulo_contacto {
+  padding-top: 100px;
+}
+.pagina_contacto fieldset {
+  border: #000000 2px solid !important;
+  margin: 30px !important;
+  padding: 20px !important;
+  width: 100%;
+}
+
+.redes {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.redes p {
+  font-size: 30px;
+}
+.redes .logo_redes, .redes #facebook_logo, .redes #twitter_logo, .redes #instagram_logo {
+  width: 30px;
+  height: 30px;
+  border: solid 2px black;
+}
+.redes #instagram_logo {
+  background-color: #ee82ee;
+}
+.redes #twitter_logo {
+  background-color: #87ceeb;
+}
+.redes #facebook_logo {
+  background-color: #0000ff;
+}
+
+footer {
+  background-color: #F4C95D;
+  grid-area: footer;
+  margin-top: 2px;
+}
+
+/* grids */
+.index_body {
+  display: grid;
+  grid-template-areas: "header" "header" "header" "nav" "nav" "nav" "main" "main" "main" "texto_video" "texto_video" "texto_video" "footer" "footer" "footer";
+  grid-template-rows: 600px 600px 1500px;
+  justify-content: stretch;
+}
+
+.products_body {
+  display: grid;
+  grid-template-areas: "header" "header" "nav" "nav" "tarjeta" "tarjeta" "footer" "footer";
+}
+
+.contactanos_body {
+  display: grid;
+  grid-template-areas: "header" "header" "form" "form" "redes" "redes" "footer" "footer";
+  grid-template-rows: 200px 400px 100px 50px;
+  grid-template-columns: repeat 2 1fr;
+}
+
+@media (max-width: 768px) {
+  * {
+    margin: 0 0 0 0;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  header .encabezado {
+    width: 50%;
+    align-content: flex-start;
+  }
+  header .barra_menu {
+    width: 50%;
+    align-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #DD7230;
+  }
+  header .barra_menu .navbar {
+    padding: 0;
+  }
+  header .barra_menu .navbar .show {
+    margin-right: 100px;
+  }
+  header .barra_menu .container-fluid {
+    margin-bottom: 30px;
+  }
+  .index_body {
+    display: block;
+  }
+  .container_principal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .container_principal img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .container_principal .texto1 {
+    margin-left: 30px;
+  }
+  .container_principal .texto_video {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container_principal .texto_video iframe {
+    width: 500px;
+    margin-left: 50px;
+  }
+  .conoce_como_trabajamos h4 {
+    margin-left: 200px;
+  }
+  .conoce_como_trabajamos p {
+    margin-left: 270px;
+  }
+  .lista_imagenes li {
+    margin-left: 200px;
+  }
+  .lista_imagenes li img {
+    width: 200px;
+    height: 200px;
+  }
+  .clientes_principal {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .clientes_principal img {
+    width: 100%;
+  }
+  .clientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .clientes img {
+    align-content: center;
+  }
+  footer {
+    width: 100%;
+  }
+}
+.redes {
+  margin-bottom: 150px;
+}
+
+.form_contacto {
+  margin-right: 80px;
 }/*# sourceMappingURL=app.css.map */

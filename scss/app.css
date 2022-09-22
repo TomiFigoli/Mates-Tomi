@@ -152,21 +152,26 @@ header .titulo__header {
   position: relative;
   width: 600px;
 }
+.contenedor__tarjetas .tarjeta img {
+  height: 500px;
+  width: 350px;
+}
 .contenedor__tarjetas .tarjeta h3 {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
 }
 .contenedor__tarjetas .tarjeta .descripcion__tarjeta {
   font-family: "Courier New", Courier, monospace;
+  padding: 40px;
 }
-.contenedor__tarjetas .tarjeta .tarjeta img {
-  padding: 10px;
+.contenedor__tarjetas .tarjeta img {
+  padding: 30px;
 }
 .contenedor__tarjetas .tarjeta button {
   margin: 10px;
   background-color: #DD7230;
 }
-.contenedor__tarjetas .tarjeta .tarjeta button:hover {
+.contenedor__tarjetas .tarjeta button:hover {
   height: 30px;
   width: 100px;
 }
@@ -322,21 +327,15 @@ footer {
   header .barra_menu .navbar {
     padding: 0;
   }
-  header .barra_menu .navbar .show {
-    margin-right: 100px;
-  }
   header .barra_menu .container-fluid {
     margin-bottom: 30px;
   }
-  .index_body {
-    display: block;
-  }
   .container_principal {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-content: center;
   }
   .container_principal img {
     width: 100%;
@@ -352,13 +351,15 @@ footer {
   }
   .container_principal .texto_video iframe {
     width: 500px;
-    margin-left: 50px;
   }
   .conoce_como_trabajamos h4 {
     margin-left: 200px;
   }
   .conoce_como_trabajamos p {
     margin-left: 270px;
+  }
+  .lista_imagenes {
+    align-content: flex-start;
   }
   .lista_imagenes li {
     margin-left: 200px;
@@ -391,7 +392,7 @@ footer {
   }
 }
 .redes {
-  margin-bottom: 150px;
+  margin-bottom: 180px;
 }
 
 .form_contacto {

@@ -59,41 +59,48 @@ header .titulo__header {
   font-size: 30px;
 }
 
-.mates_perzonalizados {
+.index_body {
+  width: 100%;
+}
+.index_body .container_principal {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.index_body .mates_perzonalizados {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   grid-area: main;
 }
-.mates_perzonalizados .titulo_principal {
+.index_body .mates_perzonalizados .titulo_principal {
   text-align: center;
   font-size: 50px;
   z-index: 2;
   margin-top: 40px;
 }
-.mates_perzonalizados .imagen_principal {
+.index_body .mates_perzonalizados .imagen_principal {
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-.mates_perzonalizados .texto1 {
+.index_body .mates_perzonalizados .texto1 {
   margin-bottom: 30px;
 }
-.mates_perzonalizados .texto1 h3 {
+.index_body .mates_perzonalizados .texto1 h3 {
   text-align: center;
   font-size: 30px;
   z-index: 2;
   margin-bottom: 30px;
 }
-.mates_perzonalizados .texto1 p {
+.index_body .mates_perzonalizados .texto1 p {
   text-align: center;
   font-family: "Rubik Marker Hatch", cursive;
   font-size: 10px;
   z-index: 2;
   margin-bottom: 30px;
 }
-
-.texto_video {
+.index_body .texto_video {
   display: flex;
   flex-direction: row;
   align-content: stretch;
@@ -101,30 +108,29 @@ header .titulo__header {
   grid-area: texto_video;
   width: 100%;
 }
-.texto_video .conoce_como_trabajamos h4 {
+.index_body .texto_video .conoce_como_trabajamos h4 {
   font-family: "Rubik Marker Hatch", cursive;
   font-size: 30px;
   padding-bottom: 10px;
   margin-right: 10px;
 }
-.texto_video .conoce_como_trabajamos p {
+.index_body .texto_video .conoce_como_trabajamos p {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.texto_video .conoce_como_trabajamos iframe {
+.index_body .texto_video .conoce_como_trabajamos iframe {
   height: 700px;
   width: 700px;
   border: #000000 2px solid;
   margin: 10px;
 }
-
-.imagenes-links {
+.index_body .imagenes-links {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-.imagenes-links img {
+.index_body .imagenes-links img {
   margin: 20px;
   height: 200px;
   width: 200px;
@@ -132,11 +138,11 @@ header .titulo__header {
   border: #000000 2px solid;
   align-items: right;
 }
-.imagenes-links p {
+.index_body .imagenes-links p {
   font-family: "Rubik Marker Hatch", cursive;
   text-decoration: none;
 }
-.imagenes-links .lista_imagenes {
+.index_body .imagenes-links .lista_imagenes {
   list-style: none;
   margin: 10px;
 }
@@ -357,33 +363,40 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin: 0;
   }
   .container_principal img {
-    width: 100%;
+    width: 70%;
     margin-bottom: 30px;
   }
   .container_principal .texto1 {
-    margin-left: 30px;
+    padding-left: 30px;
+    width: 70%;
+    margin: 0;
   }
   .container_principal .texto_video {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0;
   }
   .container_principal .texto_video iframe {
-    width: 500px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
   }
   .conoce_como_trabajamos h4 {
-    margin-left: 200px;
+    padding-left: 200px;
   }
   .conoce_como_trabajamos p {
-    margin-left: 200px;
+    padding-left: 10px;
   }
   .lista_imagenes {
     align-content: flex-start;
+    width: 100%;
   }
   .lista_imagenes li {
-    margin-left: 50px;
+    padding-left: 10px;
   }
   .lista_imagenes li img {
     width: 200px;

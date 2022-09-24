@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #E7E394 !important;
+  background-color: #EAEBEB !important;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h3 {
 }
 
 header {
-  background-color: #DD7230 !important;
+  background-color: #C6A15B !important;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -41,19 +41,19 @@ header .encabezado .titulo__header {
   padding-bottom: 5px;
 }
 header .navbar-nav {
-  background-color: #DD7230 !important;
+  background-color: #C6A15B !important;
 }
 header .container-fluid {
-  background-color: #DD7230 !important;
+  background-color: #C6A15B !important;
 }
 header .container-fluid ul li a {
-  background-color: #DD7230;
+  background-color: #C6A15B;
 }
 header .container-fluid ul li:hover {
-  background-color: #F4C95D;
+  background-color: #6A5837;
 }
 header .container-fluid ul li a:hover {
-  background-color: #F4C95D;
+  background-color: #6A5837;
 }
 header .titulo__header {
   font-size: 30px;
@@ -150,10 +150,13 @@ header .titulo__header {
 }
 .contenedor__tarjetas .tarjeta {
   border: #000000 2px solid;
-  background-color: #F4C95D;
+  background-color: #6A5837;
   margin: 10px;
   position: relative;
   width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contenedor__tarjetas .tarjeta img {
   height: 500px;
@@ -161,17 +164,27 @@ header .titulo__header {
 }
 .contenedor__tarjetas .tarjeta h3 {
   font-size: 20px;
+  color: #EAEBEB;
 }
 .contenedor__tarjetas .tarjeta .descripcion__tarjeta {
   font-family: "Courier New", Courier, monospace;
   padding: 40px;
+  color: #EAEBEB;
+}
+.contenedor__tarjetas .tarjeta .precio__tarjeta {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: #EAEBEB;
+  margin-right: 400px;
+  border: #000000 solid 2px;
+  background-color: #C6A15B;
 }
 .contenedor__tarjetas .tarjeta img {
   padding: 30px;
 }
 .contenedor__tarjetas .tarjeta button {
-  margin: 10px;
-  background-color: #DD7230;
+  margin-bottom: 10px;
+  background-color: #C6A15B;
 }
 .contenedor__tarjetas .tarjeta button:hover {
   height: 30px;
@@ -277,7 +290,7 @@ header .titulo__header {
 }
 
 footer {
-  background-color: #F4C95D;
+  background-color: #6A5837;
   grid-area: footer;
   margin-top: 2px;
 }
@@ -322,7 +335,7 @@ footer {
     align-content: center;
     display: flex;
     margin-bottom: 30px;
-    background-color: #DD7230;
+    background-color: #C6A15B;
   }
   header .barra_menu .navbar {
     padding: 0;

@@ -1,6 +1,6 @@
-$colores:(primary:#E7E394,
-secondary:#DD7230,
-terciary:#F4C95D, 
+$colores:(primary:#EAEBEB,
+secondary:#C6A15B,
+terciary:#6A5837, 
  );
 @mixin tipografy ($font, $size) { font-family: $font;
                                 font-size:$size}
@@ -110,14 +110,25 @@ grid-area: texto_video;
         margin: 10px;
         position: relative;
         width: 600px;
-    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         img{height: 500px;
         width: 350px;}
-        h3{font-size: 20px;} 
+        h3{font-size: 20px;
+        color: #EAEBEB;} 
             .descripcion__tarjeta{font-family: 'Courier New', Courier, monospace;
-            padding: 40px;}
+            padding: 40px;
+        color: #EAEBEB;}
+        .precio__tarjeta{font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            color: #EAEBEB;
+        margin-right: 400px;
+        border: #000000 solid 2px;
+        background-color:map-get($map: $colores, $key:secondary ) ;}
             img{padding: 30px;}
-            button{margin: 10px;
+            button{margin-bottom: 10px;
             background-color:map-get($map: $colores, $key:secondary ) ;}
             
             button:hover{height: 30px;

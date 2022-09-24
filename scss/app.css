@@ -384,6 +384,11 @@ footer {
     width: 200px;
     height: 200px;
   }
+  .sobre_nos_img {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .clientes_principal {
     display: flex;
     flex-direction: column;

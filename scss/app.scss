@@ -69,20 +69,21 @@ header{background-color: map-get($map: $colores, $key:secondary ) !important;
 align-content: stretch;
 justify-content: space-between;
 grid-area: texto_video;
-.conoce_como_trabajamos h4{font-family:  'Rubik Marker Hatch', cursive;
-    font-size: 30px;
-    padding-bottom: 10px ;
-    margin-right: 10px;}
-    .conoce_como_trabajamos p{padding-left: 10px;
+.conoce_como_trabajamos{
+    h4{font-family:  'Rubik Marker Hatch', cursive;
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin-right: 10px;}
+    p{padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
         }
-        .conoce_como_trabajamos iframe{height: 700px;
+    iframe{height: 700px;
             width: 700px;
             border: #000000 2px solid;
             margin: 10px;
         }
-}
+}}
 .imagenes-links{display: flex;
     flex-direction: column;
     align-content: center;
@@ -297,9 +298,3 @@ justify-content: center;
 img{align-content: center;}}
 footer{width: 100%;}
 }
-
-// contactanos mobile
-
-.redes{margin-bottom: 180px;}
-.form_contacto{margin-right: 80px}
-    

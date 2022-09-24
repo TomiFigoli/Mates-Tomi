@@ -69,6 +69,7 @@ header{background-color: map-get($map: $colores, $key:secondary ) !important;
 align-content: stretch;
 justify-content: space-between;
 grid-area: texto_video;
+width: 100%;
 .conoce_como_trabajamos{
     h4{font-family:  'Rubik Marker Hatch', cursive;
         font-size: 30px;
@@ -255,7 +256,7 @@ margin-bottom: 30px;} }
 }
 
 // index mobile
-.container_principal{width:90%;
+.container_principal{width:100%;
     height: 100%;
 display: flex;
 flex-direction: column;
@@ -270,10 +271,10 @@ iframe{width: 500px;}}
 }
 .conoce_como_trabajamos{
     h4{margin-left: 200px;}
-    p{margin-left: 270px;}
+    p{margin-left: 200px;}
 }
 .lista_imagenes{ align-content: flex-start;
-    li{margin-left: 200px;
+    li{margin-left: 50px;
         img{width: 200px;
         height: 200px;}
     }

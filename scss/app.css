@@ -99,6 +99,7 @@ header .titulo__header {
   align-content: stretch;
   justify-content: space-between;
   grid-area: texto_video;
+  width: 100%;
 }
 .texto_video .conoce_como_trabajamos h4 {
   font-family: "Rubik Marker Hatch", cursive;
@@ -351,7 +352,7 @@ footer {
     margin-bottom: 30px;
   }
   .container_principal {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -376,13 +377,13 @@ footer {
     margin-left: 200px;
   }
   .conoce_como_trabajamos p {
-    margin-left: 270px;
+    margin-left: 200px;
   }
   .lista_imagenes {
     align-content: flex-start;
   }
   .lista_imagenes li {
-    margin-left: 200px;
+    margin-left: 50px;
   }
   .lista_imagenes li img {
     width: 200px;

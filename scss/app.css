@@ -232,6 +232,10 @@ header .titulo__header {
 
 .clientes_principal {
   width: 100%;
+  padding-top: 100px;
+}
+.clientes_principal h1 {
+  margin-left: 550px;
 }
 .clientes_principal img {
   width: 100%;
@@ -397,8 +401,14 @@ footer {
     width: 100%;
     padding-top: 50px;
   }
+  .clientes_principal h1 {
+    margin-left: 150px;
+  }
   .clientes_principal img {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .clientes {
     display: flex;

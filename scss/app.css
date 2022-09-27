@@ -29,6 +29,7 @@ header {
   z-index: 2;
   grid-area: header;
   margin-bottom: 30px;
+  grid-area: "header";
 }
 header .encabezado {
   display: flex;
@@ -60,12 +61,15 @@ header .titulo__header {
 }
 
 .index_body {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat 2 1fr;
+  grid-template-areas: "header" "header" "main" "main" "links" "links" "footer" "footer";
 }
 .index_body .container_principal {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  grid-area: "main";
 }
 .index_body .mates_perzonalizados {
   display: flex;
@@ -107,6 +111,7 @@ header .titulo__header {
   justify-content: space-between;
   grid-area: texto_video;
   width: 100%;
+  grid-area: links;
 }
 .index_body .texto_video .conoce_como_trabajamos h4 {
   font-family: "Rubik Marker Hatch", cursive;
@@ -160,7 +165,7 @@ header .titulo__header {
   background-color: #6A5837;
   margin: 10px;
   position: relative;
-  width: 600px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,7 +187,7 @@ header .titulo__header {
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   color: #EAEBEB;
-  margin-right: 400px;
+  margin-right: 200px;
   border: #000000 solid 2px;
   background-color: #C6A15B;
 }
@@ -369,8 +374,11 @@ footer {
     width: 70%;
     margin-bottom: 30px;
   }
+  .container_principal .titulo_principal {
+    margin-left: 100px;
+  }
   .container_principal .texto1 {
-    padding-left: 30px;
+    padding-left: 200px;
     width: 70%;
     margin: 0;
   }
@@ -386,21 +394,34 @@ footer {
     padding: 0;
   }
   .conoce_como_trabajamos h4 {
-    padding-left: 200px;
+    padding-left: 100px;
+    margin-left: 100px;
   }
   .conoce_como_trabajamos p {
-    padding-left: 10px;
+    padding-left: 200px;
+    margin-left: 200px;
   }
   .lista_imagenes {
-    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin-bottom: 400px;
   }
   .lista_imagenes li {
-    padding-left: 10px;
+    margin-left: 200px;
+  }
+  .lista_imagenes li #clientes {
+    padding-right: 300px;
+  }
+  .lista_imagenes li #clientes img {
+    margin-left: 300px;
   }
   .lista_imagenes li img {
     width: 200px;
     height: 200px;
+  }
+  .tarjeta {
+    width: 200px;
   }
   .sobre_nos_img {
     height: -webkit-fit-content;
@@ -434,5 +455,6 @@ footer {
   }
   footer {
     width: 100%;
+    margin-top: 80px;
   }
 }/*# sourceMappingURL=app.css.map */

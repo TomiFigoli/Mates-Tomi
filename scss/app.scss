@@ -23,6 +23,7 @@ header{background-color: map-get($map: $colores, $key:secondary ) !important;
         z-index: 2;
         grid-area: header;
         margin-bottom: 30px;
+        grid-area: "header";
     .encabezado{display: flex;
         width: 100%;
         height: 40px;
@@ -39,10 +40,16 @@ header{background-color: map-get($map: $colores, $key:secondary ) !important;
 }
 
 // estilo index
-.index_body{width: 100%;
+.index_body{display: grid;
+    grid-template-columns: repeat 2(1fr);
+    grid-template-areas: "header" "header"
+                        "main" "main"
+                        "links" "links"
+                        "footer" "footer";
     .container_principal{width: 100%;
     margin-left: 0;
-margin-right: 0;}
+margin-right: 0;
+grid-area: "main";}
 .mates_perzonalizados{display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -74,6 +81,7 @@ align-content: stretch;
 justify-content: space-between;
 grid-area: texto_video;
 width: 100%;
+grid-area: links;
 .conoce_como_trabajamos{
     h4{font-family:  'Rubik Marker Hatch', cursive;
         font-size: 30px;
@@ -115,7 +123,7 @@ width: 100%;
         background-color: map-get($map: $colores, $key:terciary );
         margin: 10px;
         position: relative;
-        width: 600px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -130,7 +138,7 @@ width: 100%;
         .precio__tarjeta{font-family: 'Courier New', Courier, monospace;
             font-size: 30px;
             color: #EAEBEB;
-        margin-right: 400px;
+        margin-right: 200px;
         border: #000000 solid 2px;
         background-color:map-get($map: $colores, $key:secondary ) ;}
             img{padding: 30px;}
@@ -269,7 +277,8 @@ align-content:center;
 margin: 0;
 img{width: 70%;
 margin-bottom: 30px;}
-.texto1{padding-left: 30px;
+.titulo_principal{margin-left: 100px;}
+.texto1{padding-left: 200px;
 width: 70%;
 margin: 0;}
 .texto_video{display: flex;
@@ -281,16 +290,25 @@ margin: 0;
 padding: 0;}}
 }
 .conoce_como_trabajamos{
-    h4{padding-left: 200px;}
-    p{padding-left: 10px;}
+    h4{padding-left: 100px;
+    margin-left: 100px;}
+    p{padding-left: 200px;
+    margin-left: 200px;}
 }
-.lista_imagenes{ align-content: flex-start;
+.lista_imagenes{ display: flex;
+    flex-direction: column;
     width: 100%;
-    li{padding-left: 10px;
+    margin-bottom: 400px;
+    li{margin-left: 200px;
+        #clientes{padding-right: 300px;
+        img{margin-left: 300px;}}
         img{width: 200px;
         height: 200px;}
     }
 }
+// productos mobile
+.tarjeta{width: 200px;}
+
 // sobre nostros mobile
 .sobre_nos_img{height: fit-content;}
 
@@ -309,5 +327,9 @@ height: fit-content;}
 flex-direction: column;
 justify-content: center;
 img{align-content: center;}}
-footer{width: 100%;}
+
+
+
+footer{width: 100%;
+margin-top: 80px;}
 }

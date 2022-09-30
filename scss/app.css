@@ -7,16 +7,16 @@ body {
 }
 
 h1 {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
 }
 
 h2 {
-  font-family: "Padauk", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px !important;
 }
 
 h3 {
-  font-family: "Padauk", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 header {
@@ -40,6 +40,7 @@ header .encabezado {
 }
 header .encabezado .titulo__header {
   padding-bottom: 5px;
+  color: #EAEBEB;
 }
 header .navbar-nav {
   background-color: #C6A15B !important;
@@ -49,12 +50,14 @@ header .container-fluid {
 }
 header .container-fluid ul li a {
   background-color: #C6A15B;
+  color: #EAEBEB;
 }
 header .container-fluid ul li:hover {
-  background-color: #6A5837;
+  background-color: #353a34;
 }
 header .container-fluid ul li a:hover {
-  background-color: #6A5837;
+  background-color: #353a34;
+  color: #EAEBEB;
 }
 header .titulo__header {
   font-size: 30px;
@@ -103,6 +106,7 @@ header .titulo__header {
   font-size: 10px;
   z-index: 2;
   margin-bottom: 30px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .index_body .texto_video {
   display: flex;
@@ -114,7 +118,7 @@ header .titulo__header {
   grid-area: links;
 }
 .index_body .texto_video .conoce_como_trabajamos h4 {
-  font-family: "Rubik Marker Hatch", cursive;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
   padding-bottom: 10px;
   margin-right: 10px;
@@ -123,6 +127,7 @@ header .titulo__header {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .index_body .texto_video .conoce_como_trabajamos iframe {
   height: 700px;
@@ -162,7 +167,7 @@ header .titulo__header {
 }
 .contenedor__tarjetas .tarjeta {
   border: #000000 2px solid;
-  background-color: #6A5837;
+  background-color: #353a34;
   margin: 10px;
   position: relative;
   width: 400px;
@@ -309,7 +314,8 @@ header .titulo__header {
 }
 
 footer {
-  background-color: #6A5837;
+  background-color: #353a34;
+  color: #EAEBEB;
   grid-area: footer;
   margin-top: 2px;
 }

@@ -367,13 +367,13 @@ footer {
   }
   header .barra_menu .navbar {
     padding: 0;
+    z-index: 2;
   }
   header .barra_menu .container-fluid {
     margin-bottom: 30px;
   }
   .index_body {
     max-width: 100%;
-    overflow-x: hidden;
   }
   .index_body .container_principal {
     height: 100%;
@@ -381,14 +381,13 @@ footer {
     flex-direction: column;
     align-content: center;
     margin: 0;
-    box-sizing: border-box;
     max-width: 100%;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+    width: auto;
+    z-index: 1;
   }
   .index_body .container_principal .mates_perzonalizados {
-    width: 100%;
+    width: 400px;
+    z-index: 1;
   }
   .index_body .container_principal .mates_perzonalizados .texto_sobre_img {
     display: flex;
@@ -398,18 +397,19 @@ footer {
     width: 100%;
   }
   .index_body .container_principal .mates_perzonalizados .texto_sobre_img .titulo_principal {
-    margin-left: 10px;
-    width: 200px;
+    margin-left: 5px;
+    width: 100px;
   }
   .index_body .container_principal .mates_perzonalizados .texto_sobre_img .imagen_principal {
-    width: 400px;
+    width: 300px;
     margin-bottom: 30px;
     box-sizing: border-box;
     max-width: 100%;
+    margin-left: 40px;
   }
   .index_body .container_principal .mates_perzonalizados .texto1 {
-    padding-left: 100px;
-    width: 70%;
+    padding-left: 50px;
+    width: 300px;
     margin: 0;
     box-sizing: border-box;
     max-width: 100%;
@@ -449,10 +449,8 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 200px;
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 300px;
     box-sizing: border-box;
     max-width: 100%;
   }
@@ -500,6 +498,6 @@ footer {
 }
 
 footer {
-  width: 100%;
-  margin-top: 100px;
+  width: 350px;
+  margin-top: 50px;
 }/*# sourceMappingURL=app.css.map */

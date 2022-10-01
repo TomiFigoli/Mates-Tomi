@@ -270,37 +270,39 @@ header{ width: 100%;
     display: flex;
     margin-bottom: 30px;
     background-color: map-get($map: $colores, $key:secondary );
-    .navbar{padding: 0;}
+    .navbar{padding: 0;
+    z-index: 2;}
     .container-fluid{margin-bottom: 30px;} }
 }
 
 // index mobile
 .index_body{max-width: 100%;
-    overflow-x: hidden;
     .container_principal{
     height: 100%;
     display: flex;
     flex-direction: column;
     align-content:center;
     margin: 0;
-    box-sizing: border-box;
     max-width: 100%;
-    width: min-content;
-        .mates_perzonalizados{width: 100%;
+    width: auto;
+    z-index: 1;
+        .mates_perzonalizados{width: 400px;
+            z-index: 1;
             .texto_sobre_img{display: flex;
                             flex-direction: column;
                             max-width: 100%;
                             box-sizing: border-box;
                             width: 100%;
-                    .titulo_principal{margin-left: 10px;
-                                        width: 200px;}
-                    .imagen_principal{width: 400px;
+                    .titulo_principal{margin-left: 5px;
+                                        width: 100px;}
+                    .imagen_principal{width: 300px;
                                     margin-bottom: 30px;
                                     box-sizing: border-box;
-                                    max-width: 100%;}
+                                    max-width: 100%;
+                                margin-left: 40px;}
 }
-                    .texto1{padding-left: 100px;
-                            width: 70%;
+                    .texto1{padding-left: 50px;
+                            width: 300px;
                             margin: 0;
                             box-sizing: border-box;
                             max-width: 100%;}}
@@ -332,10 +334,8 @@ header{ width: 100%;
     .lista_imagenes{ display: flex;
                     flex-direction: column;
                     width: 100%;
-                    margin-bottom: 200px;
-                    margin-left: 0;
-                    padding-left: 0;
-                    margin-right: 0;
+                    margin-bottom: 50px;
+                    margin-left: 300px;
                     box-sizing: border-box;
                     max-width: 100%;
         li{max-width: 100%;
@@ -367,5 +367,5 @@ header{ width: 100%;
 
 
 
-footer{width: 100%;
-margin-top: 100px;}
+footer{width: 350px;
+margin-top: 50px;}

@@ -67,6 +67,7 @@ header .titulo__header {
   display: grid;
   grid-template-columns: repeat 2 1fr;
   grid-template-areas: "header" "header" "main" "main" "links" "links" "footer" "footer";
+  overflow-x: hidden;
 }
 .index_body .container_principal {
   width: 100%;
@@ -343,9 +344,11 @@ footer {
 @media (max-width: 768px) {
   * {
     margin: 0 0 0 0;
+    box-sizing: border-box;
   }
   header {
     width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -368,99 +371,135 @@ footer {
   header .barra_menu .container-fluid {
     margin-bottom: 30px;
   }
-  .container_principal {
-    width: 100%;
+  .index_body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .index_body .container_principal {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
-  .container_principal img {
-    width: 70%;
+  .index_body .container_principal .mates_perzonalizados {
+    width: 100%;
+  }
+  .index_body .container_principal .mates_perzonalizados .texto_sobre_img {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .index_body .container_principal .mates_perzonalizados .texto_sobre_img .titulo_principal {
+    margin-left: 10px;
+    width: 200px;
+  }
+  .index_body .container_principal .mates_perzonalizados .texto_sobre_img .imagen_principal {
+    width: 400px;
     margin-bottom: 30px;
+    box-sizing: border-box;
+    max-width: 100%;
   }
-  .container_principal .titulo_principal {
-    margin-left: 100px;
-  }
-  .container_principal .texto1 {
-    padding-left: 200px;
+  .index_body .container_principal .mates_perzonalizados .texto1 {
+    padding-left: 100px;
     width: 70%;
     margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
   }
-  .container_principal .texto_video {
+  .index_body .container_principal .texto_video {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0;
+    box-sizing: content-box;
+    max-width: 100%;
   }
-  .container_principal .texto_video iframe {
-    width: 80%;
+  .index_body .container_principal .texto_video .conoce_como_trabajamos {
+    max-width: 100%;
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
   }
-  .conoce_como_trabajamos h4 {
+  .index_body .container_principal .texto_video .conoce_como_trabajamos h4 {
     padding-left: 100px;
-    margin-left: 100px;
+    box-sizing: border-box;
+    max-width: 100%;
   }
-  .conoce_como_trabajamos p {
-    padding-left: 200px;
-    margin-left: 200px;
+  .index_body .container_principal .texto_video .conoce_como_trabajamos p {
+    padding-left: 150px;
+    box-sizing: border-box;
   }
-  .lista_imagenes {
+  .index_body .container_principal .texto_video .conoce_como_trabajamos iframe {
+    max-width: 100%;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    height: 400px;
+    margin-left: 50px;
+  }
+  .index_body .lista_imagenes {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    max-width: 100%;
   }
-  .lista_imagenes li {
-    margin-left: 200px;
+  .index_body .lista_imagenes li {
+    max-width: 100%;
+    box-sizing: border-box;
   }
-  .lista_imagenes li #clientes {
-    padding-right: 300px;
-  }
-  .lista_imagenes li #clientes img {
-    margin-left: 300px;
-  }
-  .lista_imagenes li img {
-    width: 200px;
-    height: 200px;
-  }
-  .tarjeta {
-    width: 200px;
-  }
-  .sobre_nos_img {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .clientes_principal {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 50px;
-  }
-  .clientes_principal h1 {
-    margin-left: 150px;
-  }
-  .clientes_principal img {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .clientes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .clientes img {
-    align-content: center;
-  }
-  footer {
-    width: 100%;
-    margin-top: 80px;
-  }
+}
+.tarjeta {
+  width: 200px;
+}
+
+.sobre_nos_img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.clientes_principal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 50px;
+}
+.clientes_principal h1 {
+  margin-left: 150px;
+}
+.clientes_principal img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.clientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.clientes img {
+  align-content: center;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
 }/*# sourceMappingURL=app.css.map */

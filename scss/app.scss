@@ -1,7 +1,6 @@
 $colores:(primary:#EAEBEB,
 secondary:#C6A15B,
-terciary:#353a34, 
- );
+terciary:#353a34,);
 @mixin tipografy ($font, $size) { font-family: $font;
                                 font-size:$size}
     
@@ -30,16 +29,16 @@ header{background-color: map-get($map: $colores, $key:secondary ) !important;
         height: 40px;
         flex-direction: row;
         align-content: stretch;
-        .titulo__header{padding-bottom: 5px;
+    .titulo__header{padding-bottom: 5px;
         color: map-get($map: $colores, $key:primary ) ;}
 }
     .navbar-nav{background-color: map-get($map: $colores, $key:secondary ) !important;}
     .container-fluid{background-color: map-get($map: $colores, $key:secondary ) !important;
-    ul li a{background-color: map-get($map: $colores, $key:secondary );
-    color: map-get($map: $colores, $key:primary );}
-    ul li:hover{background-color: map-get($map: $colores, $key:terciary );}
-    ul li a:hover{background-color: map-get($map: $colores, $key:terciary );
-                    color:  map-get($map: $colores, $key:primary );}}
+                    ul li a{background-color: map-get($map: $colores, $key:secondary );
+                            color: map-get($map: $colores, $key:primary );}
+                    ul li:hover{background-color: map-get($map: $colores, $key:terciary );}
+                    ul li a:hover{background-color: map-get($map: $colores, $key:terciary );
+                                color:  map-get($map: $colores, $key:primary );}}
     .titulo__header{font-size: 30px;}
 }
 
@@ -50,20 +49,20 @@ header{background-color: map-get($map: $colores, $key:secondary ) !important;
                         "main" "main"
                         "links" "links"
                         "footer" "footer";
+                        overflow-x: hidden;
     .container_principal{width: 100%;
-    margin-left: 0;
-margin-right: 0;
-grid-area: "main";}
-.mates_perzonalizados{display: flex;
+                        margin-left: 0;
+                        margin-right: 0;
+                        grid-area: "main";}
+    .mates_perzonalizados{display: flex;
     flex-direction: column;
     margin-top: 50px;
     grid-area: main;
-    .titulo_principal{text-align: center;
+        .titulo_principal{text-align: center;
         font-size: 50px;
         z-index: 2;
-        margin-top: 40px;
-    }
-    .imagen_principal{width: 100%;
+        margin-top: 40px;}
+        .imagen_principal{width: 100%;
         height: 100%;
         z-index: 1;}
         .texto1{margin-bottom: 30px;
@@ -74,19 +73,19 @@ grid-area: "main";}
             }
             p{text-align: center;
                 font-family:  'Rubik Marker Hatch', cursive;
-            font-size: 10px;
-            z-index: 2;
-            margin-bottom: 30px;
-        font-family: $secondary-font;}
+                font-size: 10px;
+                z-index: 2;
+                margin-bottom: 30px;
+                font-family: $secondary-font;}
         }
 }
 .texto_video{display: flex;
-    flex-direction: row;
-align-content: stretch;
-justify-content: space-between;
-grid-area: texto_video;
-width: 100%;
-grid-area: links;
+            flex-direction: row;
+            align-content: stretch;
+            justify-content: space-between;
+            grid-area: texto_video;
+            width: 100%;
+            grid-area: links;
 .conoce_como_trabajamos{
     h4{font-family:  $secondary-font;
         font-size: 30px;
@@ -104,8 +103,8 @@ grid-area: links;
         }
 }}
 .imagenes-links{display: flex;
-    flex-direction: column;
-    align-content: center;
+                flex-direction: column;
+                align-content: center;
     img{margin: 20px;
         height: 200px;
         width: 200px;
@@ -120,39 +119,39 @@ grid-area: links;
 }
 // estilo tarjetas
 .contenedor__tarjetas{display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    position: relative;
-    margin-top: 100px;
-    grid-area: tarjeta;
-    .tarjeta{border: #000000 2px solid;
-        background-color: map-get($map: $colores, $key:terciary );
-        margin: 10px;
-        position: relative;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    position: relative;
+                    margin-top: 100px;
+                    grid-area: tarjeta;
+        .tarjeta{border: #000000 2px solid;
+                background-color: map-get($map: $colores, $key:terciary );
+                margin: 10px;
+                position: relative;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-        img{height: 500px;
-        width: 350px;}
-        h3{font-size: 20px;
-        color: #EAEBEB;} 
-            .descripcion__tarjeta{font-family: 'Courier New', Courier, monospace;
-            padding: 40px;
-        color: #EAEBEB;}
-        .precio__tarjeta{font-family: 'Courier New', Courier, monospace;
-            font-size: 30px;
-            color: #EAEBEB;
-        margin-right: 200px;
-        border: #000000 solid 2px;
-        background-color:map-get($map: $colores, $key:secondary ) ;}
-            img{padding: 30px;}
-            button{margin-bottom: 10px;
+                img{height: 500px;
+                    width: 350px;}
+                h3{font-size: 20px;
+                    color: #EAEBEB;} 
+                .descripcion__tarjeta{font-family: 'Courier New', Courier, monospace;
+                                        padding: 40px;
+                                        color: #EAEBEB;}
+                .precio__tarjeta{font-family: 'Courier New', Courier, monospace;
+                                font-size: 30px;
+                                color: #EAEBEB;
+                                margin-right: 200px;
+                                border: #000000 solid 2px;
+                                background-color:map-get($map: $colores, $key:secondary ) ;}
+                img{padding: 30px;}
+                button{margin-bottom: 10px;
             background-color:map-get($map: $colores, $key:secondary ) ;}
             
-            button:hover{height: 30px;
-            width: 100px;}  
+                    button:hover{height: 30px;
+                                width: 100px;}  
     }
     }
 
@@ -164,12 +163,12 @@ grid-area: links;
     .sobre_nos_img{width: 100%;
     height: 800px;}
     .video__sobrenos { margin-top: 30px;
-    iframe{align-content: center;
-        margin: 10px;
-        border: #000000 2px solid;
-        height: 200px;
-        width: 200px;
-        }}
+                    iframe{align-content: center;
+                            margin: 10px;
+                            border: #000000 2px solid;
+                            height: 200px;
+                            width: 200px;}
+                    }
 .direcc__sobrenos{margin-top: 30px;
     .direccion{font-size: 30px;
         margin-bottom: 15px;}
@@ -182,50 +181,50 @@ grid-area: links;
 .clientes_principal{width: 100%;
     padding-top: 100px;
     h1{margin-left: 550px;}
-img{width: 100%;}}
+    img{width: 100%;}}
 .clientes{display: flex;
     flex-direction: row;
 margin-top: 20px;
-img{width: 80px;
+    img{width: 80px;
     height: 80px;
-border: #000000 2px solid;
-margin: 5px;}}
+    border: #000000 2px solid;
+    margin: 5px;}}
 
 
 
 // contactos
 .pagina_contacto{display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-.titulo_contacto{padding-top: 100px;}
-fieldset{border: #000000 2px solid !important;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+    .titulo_contacto{padding-top: 100px;}
+    fieldset{border: #000000 2px solid !important;
     margin: 30px !important;
     padding: 20px !important;
     width: 100%;}
 }
 .redes{width: 100%;
-height: 300px;
-margin-bottom: 50px;
-grid-area: redes;
-display: flex;
-flex-direction: column;
-align-content: center;
-p{font-size: 30px;}
-.logo_redes{width: 30px;
-height: 30px;
-border: solid 2px black}
-#instagram_logo{@extend .logo_redes;
-background-color: #ee82ee;}
-#twitter_logo{@extend .logo_redes;
-background-color: #87ceeb;}
-#facebook_logo{@extend .logo_redes;
-background-color:#0000ff;}}
+        height: 300px;
+        margin-bottom: 50px;
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+            p{font-size: 30px;}
+            .logo_redes{width: 30px;
+                        height: 30px;
+                        border: solid 2px black}
+                #instagram_logo{@extend .logo_redes;
+                                background-color: #ee82ee;}
+                #twitter_logo{@extend .logo_redes;
+                            background-color: #87ceeb;}
+                #facebook_logo{@extend .logo_redes;
+                                background-color:#0000ff;}}
 
 footer{background-color: map-get($map: $colores, $key:terciary );
-    color:  map-get($map: $colores, $key:primary );
-    grid-area: footer;
-    margin-top: 2px;}
+        color:  map-get($map: $colores, $key:primary );
+        grid-area: footer;
+        margin-top: 2px;}
 
     /* grids */
 .index_body{display: grid;
@@ -254,10 +253,12 @@ grid-template-areas: "header" "header"
 grid-template-rows: 200px 400px 100px 50px;
 grid-template-columns: repeat 2(1fr);}
 
-@media (max-width: 768px){ *{margin: 0 0 0 0;}
+@media (max-width: 768px){ *{margin: 0 0 0 0;
+box-sizing: border-box;}
 
 // estilo mobile header
 header{ width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -269,49 +270,77 @@ header{ width: 100%;
     display: flex;
     margin-bottom: 30px;
     background-color: map-get($map: $colores, $key:secondary );
-.navbar{padding: 0;}
-.container-fluid{
-margin-bottom: 30px;} }
+    .navbar{padding: 0;}
+    .container-fluid{margin-bottom: 30px;} }
 }
 
 // index mobile
-
-.container_principal{width:100%;
+.index_body{max-width: 100%;
+    overflow-x: hidden;
+    .container_principal{
     height: 100%;
-display: flex;
-flex-direction: column;
-align-content:center;
-margin: 0;
-img{width: 70%;
-margin-bottom: 30px;}
-.titulo_principal{margin-left: 100px;}
-.texto1{padding-left: 200px;
-width: 70%;
-margin: 0;}
-.texto_video{display: flex;
-flex-direction: column;
-width: 100%;
-margin: 0;
-iframe{width: 80%;
-margin: 0;
-padding: 0;}}
-}
-.conoce_como_trabajamos{
-    h4{padding-left: 100px;
-    margin-left: 100px;}
-    p{padding-left: 200px;
-    margin-left: 200px;}
-}
-.lista_imagenes{ display: flex;
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 400px;
-    li{margin-left: 200px;
-        #clientes{padding-right: 300px;
-        img{margin-left: 300px;}}
-        img{width: 200px;
-        height: 200px;}
-    }
+    align-content:center;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: min-content;
+        .mates_perzonalizados{width: 100%;
+            .texto_sobre_img{display: flex;
+                            flex-direction: column;
+                            max-width: 100%;
+                            box-sizing: border-box;
+                            width: 100%;
+                    .titulo_principal{margin-left: 10px;
+                                        width: 200px;}
+                    .imagen_principal{width: 400px;
+                                    margin-bottom: 30px;
+                                    box-sizing: border-box;
+                                    max-width: 100%;}
+}
+                    .texto1{padding-left: 100px;
+                            width: 70%;
+                            margin: 0;
+                            box-sizing: border-box;
+                            max-width: 100%;}}
+    .texto_video{display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                box-sizing: content-box;
+                max-width: 100%;
+            .conoce_como_trabajamos{max-width: 100%;
+                                    box-sizing: content-box;
+                                    margin: 0;
+                                    padding: 0;
+                h4{padding-left: 100px;
+                    box-sizing: border-box;
+                    max-width: 100%;}
+                p{padding-left: 150px;
+                box-sizing: border-box;}
+                iframe{max-width: 100%;
+                    box-sizing: border-box;
+                    width: auto;
+                    max-width: 100%;
+                    height: 400px;
+                    margin-left: 50px;}
+}
+}
+}
+
+    .lista_imagenes{ display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 200px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    margin-right: 0;
+                    box-sizing: border-box;
+                    max-width: 100%;
+        li{max-width: 100%;
+            box-sizing: border-box;}
+   }}
 }
 // productos mobile
 .tarjeta{width: 200px;}
@@ -321,22 +350,22 @@ padding: 0;}}
 
 // clientes mobile
    .clientes_principal{display: flex;
-    flex-direction: column;
-align-content: center;
-justify-content: center;
-width: 100%;
-padding-top: 50px;
-h1{margin-left: 150px;}
-img{width: 100%;
-height: fit-content;}
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    width: 100%;
+                    padding-top: 50px;
+            h1{margin-left: 150px;}
+            img{width: 100%;
+                height: fit-content;}
 } 
-.clientes{display: flex;
-flex-direction: column;
-justify-content: center;
-img{align-content: center;}}
+        .clientes{display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+            img{align-content: center;}}
 
 
 
 footer{width: 100%;
-margin-top: 80px;}
-}
+margin-top: 100px;}
